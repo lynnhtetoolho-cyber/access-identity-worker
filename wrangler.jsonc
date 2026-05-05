@@ -1,0 +1,17 @@
+{
+	"name": "access-identity-worker",
+	"main": "src/index.js",
+	"compatibility_date": "2026-05-05",
+	"routes": [
+		{
+			"pattern": "tunnel.zawgyiconnect.com/secure*",
+			"zone_name": "zawgyiconnect.com"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "FLAGS_BUCKET",
+			"bucket_name": "contry-flags"
+		}
+	]
+}
